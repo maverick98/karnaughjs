@@ -8,7 +8,7 @@
 /*
  * Your application specific code will go here
  */
-define(['ojs/ojresponsiveutils', 'ojs/ojresponsiveknockoututils', 'knockout', 'ojs/ojknockout'],
+define(['ojs/ojresponsiveutils', 'ojs/ojresponsiveknockoututils', 'knockout', 'ojs/ojknockout','./cca/cca-kmap/loader'],
   function(ResponsiveUtils, ResponsiveKnockoutUtils, ko) {
      function ControllerViewModel() {
 
@@ -18,18 +18,11 @@ define(['ojs/ojresponsiveutils', 'ojs/ojresponsiveknockoututils', 'knockout', 'o
 
       // Header
       // Application Name used in Branding Area
-      this.appName = ko.observable("App Name");
+      this.appName = ko.observable("Karnaugh");
       // User Info used in Global Navigation area
-      this.userLogin = ko.observable("john.hancock@oracle.com");
+      this.userLogin = ko.observable("msahu6174@gmail.com");
 
-      // Footer      
-      this.footerLinks = [
-        {name: 'About Oracle', linkId: 'aboutOracle', linkTarget:'http://www.oracle.com/us/corporate/index.html#menu-about'},
-        { name: "Contact Us", id: "contactUs", linkTarget: "http://www.oracle.com/us/corporate/contact/index.html" },
-        { name: "Legal Notices", id: "legalNotices", linkTarget: "http://www.oracle.com/us/legal/index.html" },
-        { name: "Terms Of Use", id: "termsOfUse", linkTarget: "http://www.oracle.com/us/legal/terms/index.html" },
-        { name: "Your Privacy Rights", id: "yourPrivacyRights", linkTarget: "http://www.oracle.com/us/legal/privacy/index.html" },
-      ];
+     
      }
 
      return new ControllerViewModel();
